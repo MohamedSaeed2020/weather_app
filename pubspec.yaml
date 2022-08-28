@@ -1,0 +1,53 @@
+name: weather_app
+description: Weather App with openweathermap.org API.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  get: ^4.6.5
+  dio: ^4.0.6
+  shared_preferences: ^2.0.15
+  intl: ^0.17.0
+  syncfusion_flutter_charts: ^20.2.45
+  lottie: ^1.4.2
+  sizer: ^2.0.15
+  rename: ^2.0.1
+  firebase_core: ^1.21.1
+  firebase_auth: ^3.7.0
+  cloud_firestore: ^3.4.6
+  geolocator: ^9.0.1
+  google_maps_flutter: ^2.1.12
+  flutter_spinkit: ^5.1.0
+  flutter_svg: ^1.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/weather.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
+  fonts:
+    - family: flutterfonts
+      fonts:
+        - asset: assets/fonts/flutterfonts.ttf
+    - family: IconBroken
+      fonts:
+        - asset: assets/fonts/icons.ttf
